@@ -1,0 +1,149 @@
+.admin-banner {
+    background: linear-gradient(110deg, #173b2a, #275c42);
+    color: white;
+    border-radius: 18px;
+    padding: 25px 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.admin-banner span {
+    font-size: 10px;
+    color: #c0dccc;
+    letter-spacing: 1px
+}
+
+.admin-banner h2 {
+    font-size: 24px;
+    margin: 3px 0
+}
+
+.admin-banner p {
+    font-size: 11px;
+    color: #d0e5d8;
+    margin: 0
+}
+
+.admin-banner>div:last-child {
+    font-size: 70px
+}
+
+.admin-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin: 18px 0
+}
+
+.admin-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px
+}
+
+.admin-card {
+    padding: 20px
+}
+
+.bar-row {
+    margin: 12px 0
+}
+
+.bar-row>div {
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    color: #5a685f
+}
+
+.bar-row i {
+    display: block;
+    background: #edf2ee;
+    height: 7px;
+    border-radius: 10px;
+    margin-top: 5px;
+    overflow: hidden
+}
+
+.bar-row em {
+    display: block;
+    height: 100%;
+    background: #55a37a;
+    border-radius: 10px
+}
+
+.top-issue {
+    display: flex;
+    gap: 14px;
+    padding: 15px;
+    background: #f8faf8;
+    border-radius: 12px
+}
+
+.top-issue>span {
+    font-size: 34px
+}
+
+.top-issue b,
+.top-issue small {
+    display: block
+}
+
+.top-issue b {
+    font-size: 15px
+}
+
+.top-issue small {
+    font-size: 10px;
+    color: #176b45;
+    font-weight: 700
+}
+
+.top-issue p {
+    font-size: 10px;
+    color: #748078
+}
+
+@media(max-width:900px) {
+    .admin-stats {
+        grid-template-columns: 1fr 1fr
+    }
+
+    .admin-grid {
+        grid-template-columns: 1fr
+    }
+}
+.status-summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.status-summary > div {
+  background: #f7f9f7;
+  border: 1px solid #e7ede9;
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.status-summary span,
+.status-summary b {
+  display: block;
+}
+
+.status-summary span {
+  font-size: 9px;
+  color: #748078;
+}
+
+.status-summary b {
+  font-size: 20px;
+  color: #176b45;
+}
+
+@media (max-width: 600px) {
+  .status-summary {
+    grid-template-columns: 1fr;
+  }
+}
